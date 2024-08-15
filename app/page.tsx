@@ -7,7 +7,7 @@ import './page.scss';
 
 export default function Home() {
   return (
-    <main>
+    <main className="app-width">
       <div className="grid">
         <h1>Portfolio</h1>
         <div className="cell intro">
