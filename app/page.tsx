@@ -3,14 +3,13 @@ import Link from 'next/link';
 import { ArrowRight, ChainLink, Earth } from './_icons';
 import Time from './_components/time';
 import Titles from './_components/titles/titles';
+import './page.scss';
 
 export default function Home() {
   return (
     <main>
       <div className="grid">
-        <div className="title">
-          <h1>Portfolio</h1>
-        </div>
+        <h1>Portfolio</h1>
         <div className="cell intro">
           <div>
             <span className="welcome">Welcome</span>
