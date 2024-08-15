@@ -77,12 +77,15 @@ a {
   color: inherit;
 }
 
+.app-width {
+  max-width: var(--max-width);
+  margin: 1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 1rem;
-  max-width: var(--max-width);
 }
 
 .cell {
@@ -152,9 +155,12 @@ a.cell:hover {
     --max-width: 700px;
   }
 
+  .app-width {
+    margin: 2rem auto;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    margin: 2rem auto;
   }
 
   .cell {
@@ -167,9 +173,12 @@ a.cell:hover {
     --max-width: 900px;
   }
 
+  .app-width {
+    margin: 3rem auto;
+  }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    margin: 3rem auto;
   }
 }
 
@@ -178,9 +187,12 @@ a.cell:hover {
     --max-width: 1100px;
   }
 
+  .app-width {
+    margin: 4rem auto;
+  }
+
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    margin: 4rem auto;
   }
 }
 
