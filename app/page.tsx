@@ -1,94 +1,80 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowRight, ChainLink, Earth } from './_icons';
+import Time from './_components/time';
+import Titles from './_components/titles/titles';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="grid">
+        <div className="title">
+          <h1>Portfolio</h1>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div className="cell intro">
+          <div>
+            <span className="welcome">Welcome</span>
+            <p>
+              Hi, I&apos;m <strong>Ash Johns</strong>, a Frontend Developer with a focus on design systems and user
+              experience.
+            </p>
+          </div>
+          <Image src="/memoji.png" alt="My Memoji" className="memoji" width={353} height={353} priority />
+          <Titles />
+        </div>
+        <div className="cell about">
+          <h2>About</h2>
+          <p>My latest focus has been on building out design systems from the ground up.</p>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            That includes everything from developing React components, to setting up CI/CD and everything in-between.
+            These experiences have made me very good at writing reusable code with a great developer experience. Code
+            that abides to frontend best practices and accessibility standards. I&apos;m always looking to apply these
+            skills in new ways, so don&apos;t hesitate to reach out!
           </p>
-        </a>
+          <p>The stack I&apos;m most familiar with these days is</p>
+          <ul>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>NextJS</li>
+          </ul>
+          <p>But I&apos;m always looking to learn new tech and use the right tool for the job.</p>
+        </div>
+        <div className="cell contact">
+          <h2>Get in touch</h2>
+          <h3>Email</h3>
+          <Link href="mailto:mail@ashpjohns.com">mail@ashpjohns.com</Link>
+
+          <h3>Socials</h3>
+          <ul>
+            <li>
+              <Link href="">GitHub</Link>
+            </li>
+            <li>
+              <Link href="">LinkedIn</Link>
+            </li>
+          </ul>
+        </div>
+        <Link href="projects" className="cell compact">
+          <span className="icon-right">
+            Projects <ArrowRight />
+          </span>
+        </Link>
+        <Link href="" className="cell compact">
+          <span className="icon-right">
+            Blog <ArrowRight />
+          </span>
+        </Link>
+        <div className="cell now">
+          <h2 className="icon-right">
+            Status <div className="status"></div>
+          </h2>
+          <p>Currently open to work</p>
+        </div>
+        <div className="cell location">
+          <h2>Boston, MA</h2>
+          <Time />
+          <Earth />
+        </div>
       </div>
     </main>
   );
