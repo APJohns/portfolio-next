@@ -58,7 +58,7 @@ export default function Home() {
             Projects <ArrowRight />
           </span>
         </Link>
-        <Link href="" className="cell compact">
+        <Link href="https://www.ashjohns.dev" className="cell compact">
           <span className="icon-right">
             Blog <ArrowRight />
           </span>
