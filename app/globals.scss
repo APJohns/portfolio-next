@@ -1,6 +1,8 @@
 :root {
   --max-width: 100%;
   --text-color-primary: #cfcfcf;
+  --text-color-emphasis: #fff;
+  --text-color-subtle: #888;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,7 +69,7 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  color: #888;
+  color: var(--text-color-subtle);
   font-weight: normal;
 }
 
@@ -128,7 +130,7 @@ p {
 }
 
 strong {
-  color: white;
+  color: var(--text-color-emphasis);
 }
 
 a.cell:hover {
