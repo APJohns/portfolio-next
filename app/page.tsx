@@ -34,7 +34,7 @@ export default function Home() {
           <ul>
             <li>Typescript</li>
             <li>React</li>
-            <li>NextJS</li>
+            <li>Next.js</li>
           </ul>
           <p>But I&apos;m always looking to learn new tech and use the right tool for the job.</p>
         </div>
