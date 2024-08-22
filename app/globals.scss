@@ -3,6 +3,9 @@
   --text-color-primary: #cfcfcf;
   --text-color-emphasis: #fff;
   --text-color-subtle: #888;
+  --action-hover: rgb(0, 119, 255);
+  --accent: rgb(0, 204, 92);
+  --border-radius-primary: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +37,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  &:focus-visible {
+    outline: var(--accent) solid 2px;
+  }
 }
 
 html,
@@ -63,6 +70,14 @@ body {
   box-shadow: multiple-box-shadow(500);
 }
 
+h1,
+h2 {
+  font-family: var(--font-display);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-color-emphasis);
+}
+
 h2 {
   font-size: 1.25rem;
 }
@@ -75,6 +90,10 @@ h3 {
 
 a {
   color: inherit;
+
+  &:hover {
+    color: var(--action-hover);
+  }
 }
 
 .app-width {
@@ -91,10 +110,10 @@ a {
 .cell {
   // border: 1px solid #4a4a4a;
   border: 1px solid hsl(212, 15%, 22%);
-  border-radius: 8px;
+  border-radius: var(--border-radius-primary);
   padding: 1.5rem;
   color: var(--text-color-primary);
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
   // background: #1a1a1a;
   background: hsla(230, 10%, 8%, 0.8);
 
@@ -106,8 +125,8 @@ a {
 .cell.compact {
   display: grid;
   align-items: center;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1rem;
+  // font-weight: bold;
   opacity: 0;
   animation: slide-from-bottom 0.25s ease-out 0.25s forwards;
 }
@@ -137,7 +156,7 @@ strong {
 }
 
 a.cell:hover {
-  border: 1px solid rgb(0, 119, 255);
+  border: 1px solid var(--action-hover);
 }
 
 .cell h2 {

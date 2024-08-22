@@ -18,11 +18,46 @@ export default function Home() {
               experience.
             </p>
           </div>
-          <Image src="/memoji.png" alt="My Memoji" className="memoji" width={353} height={353} priority />
+          {/* <Image src="/memoji.png" alt="My Memoji" className="memoji" width={353} height={353} priority /> */}
+        </div>
+        <div className="cell compact">
           <Titles />
         </div>
+        <div className="cell projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <Link href="">
+                <span className="icon-right">
+                  Boston Scientific <ArrowRight />
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <span className="icon-right">
+                  Epsilon <ArrowRight />
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <span className="icon-right">
+                  Cracking Good Gifts <ArrowRight />
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <span className="icon-right">
+                  Blog <ArrowRight />
+                </span>
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="cell about">
-          <h2>About</h2>
+          <h2>Origin story</h2>
           <p>My latest focus has been on building out design systems from the ground up.</p>
           <p>
             That includes everything from developing React components, to setting up CI/CD and everything in-between.
@@ -39,7 +74,7 @@ export default function Home() {
           <p>But I&apos;m always looking to learn new tech and use the right tool for the job.</p>
         </div>
         <div className="cell contact">
-          <h2>Get in touch</h2>
+          <h2>Make contact</h2>
           <h3>Email</h3>
           <Link href="mailto:mail@ashpjohns.com">mail@ashpjohns.com</Link>
 
@@ -53,9 +88,15 @@ export default function Home() {
             </li>
           </ul>
         </div>
+        <div className="cell now">
+          <h2 className="icon-right">
+            Status <div className="status"></div>
+          </h2>
+          <p>Currently open to work</p>
+        </div>
         <Link href="projects" className="cell compact">
           <span className="icon-right">
-            Projects <ArrowRight />
+            Resume <ArrowRight />
           </span>
         </Link>
         <Link href="https://www.ashjohns.dev" className="cell compact">
@@ -63,12 +104,6 @@ export default function Home() {
             Blog <ArrowRight />
           </span>
         </Link>
-        <div className="cell now">
-          <h2 className="icon-right">
-            Status <div className="status"></div>
-          </h2>
-          <p>Currently open to work</p>
-        </div>
         <div className="cell location">
           <h2>Boston, MA</h2>
           <Time />
