@@ -97,7 +97,7 @@ export default function Home() {
           </h2>
           <p>Currently open to work</p>
         </div>
-        <Link href="projects" className="cell compact">
+        <Link href="resume.pdf" className="cell compact">
           <span className="icon-right">
             Resume <ArrowRight />
           </span>
