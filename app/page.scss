@@ -45,12 +45,22 @@ h1 {
 }
 
 .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+
   ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1rem;
     list-style: none;
+  }
+
+  .see-all {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color-primary);
+    padding-top: 1rem;
   }
 }
 
@@ -133,9 +143,6 @@ h1 {
 @media (min-width: 768px) {
   .intro {
     grid-column: span 1;
-    /* grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr auto;
-    gap: 0 2rem; */
   }
 
   .memoji {

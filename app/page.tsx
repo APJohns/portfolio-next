@@ -30,30 +30,37 @@ export default function Home() {
           <h2>Projects</h2>
           <ul>
             <li>
-              <Link href="">
+              <Link href="projects/boston-scientific">
                 <span className="icon-right">
                   Boston Scientific <ArrowRight />
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="projects/epsilon">
                 <span className="icon-right">
                   Epsilon <ArrowRight />
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="projects/cracking-good-gifts">
                 <span className="icon-right">
                   Cracking Good Gifts <ArrowRight />
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="projects/blog">
                 <span className="icon-right">
                   Blog <ArrowRight />
+                </span>
+              </Link>
+            </li>
+            <li className="see-all">
+              <Link href="projects">
+                <span className="icon-right">
+                  See all projects <ArrowRight />
                 </span>
               </Link>
             </li>
