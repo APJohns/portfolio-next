@@ -9,7 +9,10 @@ export default function Home() {
   return (
     <main className="app-width">
       <div className="grid">
-        <h1>Portfolio</h1>
+        <h1>
+          <Image src="/logo.png" alt="" width={163} height={163} className="logo" />
+          Portfolio
+        </h1>
         <div className="cell intro">
           <div>
             <span className="welcome">Welcome</span>

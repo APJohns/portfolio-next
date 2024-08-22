@@ -55,6 +55,10 @@ body {
   background: black radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+p {
+  line-height: 1.5;
+}
+
 .stars-sm {
   width: 1px;
   height: 1px;
@@ -125,8 +129,10 @@ a {
 .cell.compact {
   display: grid;
   align-items: center;
-  font-size: 1rem;
+  // font-size: 1rem;
   // font-weight: bold;
+  // letter-spacing: 2px;
+  // text-transform: uppercase;
   opacity: 0;
   animation: slide-from-bottom 0.25s ease-out 0.25s forwards;
 }
