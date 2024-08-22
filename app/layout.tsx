@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Noto_Sans, Gruppo, Noto_Sans_Display } from 'next/font/google';
-export const noto = Noto_Sans({ subsets: ['latin'] });
-export const gruppo = Gruppo({ weight: '400', subsets: ['latin'], variable: '--font-display' });
 import './globals.scss';
+
+const noto = Noto_Sans({ subsets: ['latin'] });
+const gruppo = Gruppo({ weight: '400', subsets: ['latin'], variable: '--font-display' });
 
 export const metadata: Metadata = {
   title: 'Ash Johns - Portfolio',
